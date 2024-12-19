@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: email_test4
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ungjae1322@gmail.com
+    password: mbgl wfeq kulh kaah
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+    auth-code-expiration-millis: 1800000
+
+
+data:
+  redis:
+    port: 6379
+    host: localhost
